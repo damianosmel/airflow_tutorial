@@ -1,0 +1,81 @@
+[2026-02-06T16:36:41.415+0200] {providers_manager.py:946} INFO - The hook_class 'airflow.providers.standard.hooks.filesystem.FSHook' is not fully initialized (UI widgets will be missing), because the 'flask_appbuilder' package is not installed, however it is not required for Airflow components to work
+[2026-02-06T16:36:41.419+0200] {providers_manager.py:946} INFO - The hook_class 'airflow.providers.standard.hooks.package_index.PackageIndexHook' is not fully initialized (UI widgets will be missing), because the 'flask_appbuilder' package is not installed, however it is not required for Airflow components to work
+standalone | Starting Airflow Standalone
+standalone | Password for the admin user has been previously generated in /home/damian/airflow/simple_auth_manager_passwords.json.generated. Not echoing it here.
+standalone | Checking database is initialized
+standalone | Database ready
+scheduler  | [2026-02-06T16:36:46.632+0200] {providers_manager.py:946} INFO - The hook_class 'airflow.providers.standard.hooks.filesystem.FSHook' is not fully initialized (UI widgets will be missing), because the 'flask_appbuilder' package is not installed, however it is not required for Airflow components to work
+api-server | [2026-02-06T16:36:46.631+0200] {providers_manager.py:946} INFO - The hook_class 'airflow.providers.standard.hooks.filesystem.FSHook' is not fully initialized (UI widgets will be missing), because the 'flask_appbuilder' package is not installed, however it is not required for Airflow components to work
+api-server | [2026-02-06T16:36:46.639+0200] {providers_manager.py:946} INFO - The hook_class 'airflow.providers.standard.hooks.package_index.PackageIndexHook' is not fully initialized (UI widgets will be missing), because the 'flask_appbuilder' package is not installed, however it is not required for Airflow components to work
+scheduler  | [2026-02-06T16:36:46.640+0200] {providers_manager.py:946} INFO - The hook_class 'airflow.providers.standard.hooks.package_index.PackageIndexHook' is not fully initialized (UI widgets will be missing), because the 'flask_appbuilder' package is not installed, however it is not required for Airflow components to work
+api-server | ____________       _____________
+api-server | ____    |__( )_________  __/__  /________      __
+api-server | ____  /| |_  /__  ___/_  /_ __  /_  __ \_ | /| / /
+api-server | ___  ___ |  / _  /   _  __/ _  / / /_/ /_ |/ |/ /
+api-server | _/_/  |_/_/  /_/    /_/    /_/  \____/____/|__/
+api-server | [2026-02-06T16:36:46.832+0200] {api_server_command.py:92} INFO - Running the uvicorn with:
+api-server | Apps: all
+api-server | Workers: 4
+api-server | Host: 0.0.0.0:8080
+api-server | Timeout: 120
+api-server | Logfiles: -
+api-server | =================================================================
+api-server | INFO:     Uvicorn running on http://0.0.0.0:8080 (Press CTRL+C to quit)
+api-server | INFO:     Started parent process [127499]
+dag-processor | [2026-02-06T16:36:47.081+0200] {providers_manager.py:946} INFO - The hook_class 'airflow.providers.standard.hooks.filesystem.FSHook' is not fully initialized (UI widgets will be missing), because the 'flask_appbuilder' package is not installed, however it is not required for Airflow components to work
+triggerer  | [2026-02-06T16:36:47.061+0200] {providers_manager.py:946} INFO - The hook_class 'airflow.providers.standard.hooks.filesystem.FSHook' is not fully initialized (UI widgets will be missing), because the 'flask_appbuilder' package is not installed, however it is not required for Airflow components to work
+triggerer  | [2026-02-06T16:36:47.084+0200] {providers_manager.py:946} INFO - The hook_class 'airflow.providers.standard.hooks.package_index.PackageIndexHook' is not fully initialized (UI widgets will be missing), because the 'flask_appbuilder' package is not installed, however it is not required for Airflow components to work
+dag-processor | [2026-02-06T16:36:47.085+0200] {providers_manager.py:946} INFO - The hook_class 'airflow.providers.standard.hooks.package_index.PackageIndexHook' is not fully initialized (UI widgets will be missing), because the 'flask_appbuilder' package is not installed, however it is not required for Airflow components to work
+scheduler  | ____________       _____________
+scheduler  | ____    |__( )_________  __/__  /________      __
+scheduler  | ____  /| |_  /__  ___/_  /_ __  /_  __ \_ | /| / /
+scheduler  | ___  ___ |  / _  /   _  __/ _  / / /_/ /_ |/ |/ /
+scheduler  | _/_/  |_/_/  /_/    /_/    /_/  \____/____/|__/
+scheduler  | [2026-02-06T16:36:47.247+0200] {workday.py:41} WARNING - Could not import pandas. Holidays will not be considered.
+api-server | INFO:     Waiting for child process [127516]
+api-server | INFO:     Child process [127516] died
+api-server | INFO:     Waiting for child process [127517]
+api-server | INFO:     Child process [127517] died
+scheduler  | [2026-02-06T16:37:00.731+0200] {scheduler_job_runner.py:989} INFO - Starting the scheduler
+scheduler  | [2026-02-06T16:37:01.755+0200] {executor_loader.py:269} INFO - Loaded executor: :LocalExecutor:
+scheduler  | [2026-02-06 16:37:02 +0200] [127521] [INFO] Starting gunicorn 23.0.0
+triggerer  | ____________       _____________
+triggerer  | ____    |__( )_________  __/__  /________      __
+triggerer  | ____  /| |_  /__  ___/_  /_ __  /_  __ \_ | /| / /
+triggerer  | ___  ___ |  / _  /   _  __/ _  / / /_/ /_ |/ |/ /
+triggerer  | _/_/  |_/_/  /_/    /_/    /_/  \____/____/|__/
+scheduler  | [2026-02-06 16:37:04 +0200] [127521] [ERROR] Connection in use: ('::', 8793)
+api-server | INFO:     Waiting for child process [127518]
+api-server | INFO:     Child process [127518] died
+scheduler  | [2026-02-06 16:37:05 +0200] [127521] [ERROR] connection to ('::', 8793) failed: [Errno 98] Address already in use
+scheduler  | [2026-02-06T16:37:05.974+0200] {scheduler_job_runner.py:2128} INFO - Adopting or resetting orphaned tasks for active dag runs
+scheduler  | [2026-02-06 16:37:07 +0200] [127521] [ERROR] Connection in use: ('::', 8793)
+scheduler  | [2026-02-06 16:37:09 +0200] [127521] [ERROR] connection to ('::', 8793) failed: [Errno 98] Address already in use
+api-server | INFO:     Waiting for child process [127519]
+api-server | INFO:     Child process [127519] died
+scheduler  | [2026-02-06 16:37:11 +0200] [127521] [ERROR] Connection in use: ('::', 8793)
+scheduler  | [2026-02-06 16:37:11 +0200] [127521] [ERROR] connection to ('::', 8793) failed: [Errno 98] Address already in use
+scheduler  | [2026-02-06 16:37:14 +0200] [127521] [ERROR] Connection in use: ('::', 8793)
+scheduler  | [2026-02-06 16:37:14 +0200] [127521] [ERROR] connection to ('::', 8793) failed: [Errno 98] Address already in use
+api-server | INFO:     Waiting for child process [127525]
+scheduler  | [2026-02-06 16:37:17 +0200] [127521] [ERROR] Connection in use: ('::', 8793)
+api-server | INFO:     Child process [127525] died
+scheduler  | [2026-02-06 16:37:18 +0200] [127521] [ERROR] connection to ('::', 8793) failed: [Errno 98] Address already in use
+scheduler  | [2026-02-06 16:37:20 +0200] [127521] [ERROR] Can't connect to ('::', 8793)
+triggerer  | [2026-02-06 16:37:21 +0200] [127531] [INFO] Starting gunicorn 23.0.0
+triggerer  | [2026-02-06 16:37:21 +0200] [127531] [ERROR] Connection in use: ('::', 8794)
+triggerer  | [2026-02-06 16:37:21 +0200] [127531] [ERROR] connection to ('::', 8794) failed: [Errno 98] Address already in use
+triggerer  | [2026-02-06 16:37:23 +0200] [127531] [ERROR] Connection in use: ('::', 8794)
+triggerer  | [2026-02-06 16:37:23 +0200] [127531] [ERROR] connection to ('::', 8794) failed: [Errno 98] Address already in use
+triggerer  | [2026-02-06 16:37:25 +0200] [127531] [ERROR] Connection in use: ('::', 8794)
+triggerer  | [2026-02-06 16:37:25 +0200] [127531] [ERROR] connection to ('::', 8794) failed: [Errno 98] Address already in use
+api-server | INFO:     Waiting for child process [127527]
+triggerer  | [2026-02-06 16:37:26 +0200] [127531] [ERROR] Connection in use: ('::', 8794)
+triggerer  | [2026-02-06 16:37:26 +0200] [127531] [ERROR] connection to ('::', 8794) failed: [Errno 98] Address already in use
+api-server | INFO:     Child process [127527] died
+scheduler  | [2026-02-06T16:37:26.996+0200] {scheduler_job_runner.py:2151} INFO - Marked 2 SchedulerJob instances as failed
+triggerer  | [2026-02-06 16:37:28 +0200] [127531] [ERROR] Connection in use: ('::', 8794)
+triggerer  | [2026-02-06 16:37:28 +0200] [127531] [ERROR] connection to ('::', 8794) failed: [Errno 98] Address already in use
+triggerer  | [2026-02-06 16:37:29 +0200] [127531] [ERROR] Can't connect to ('::', 8794)
+api-server | INFO:     Waiting for child process [127532]
+api-server | INFO:     Child process [127532] died
