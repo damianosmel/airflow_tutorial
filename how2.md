@@ -11,10 +11,7 @@ source .venv/bin/activate
 bash airflow_install.sh
 ```
 
-Start up airflow service:
-`airflow standalone`
-
-Start-up the service:
+Run airflow standalone:
 `airflow standalone > airflow_service.log 2>&1`
 
 Check password for user:
@@ -22,3 +19,6 @@ Check password for user:
 
 Airflow home directory:
 `AIRFLOW_HOME=/home/damian/airflow`
+
+The Newcomer's Guide to Ariflow's Architecture:
+https://www.youtube.com/watch?v=oLTMN-4Rvj8
