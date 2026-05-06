@@ -1,13 +1,18 @@
 ## How to install
 Following set-up [documentation](https://airflow.apache.org/docs/apache-airflow/stable/start.html)
 
-```
-export AIRFLOW_HOME=~/airflow
+Install uv:
+`curl -LsSf https://astral.sh/uv/install.sh | sh`
 
-AIRFLOW_VERSION=3.0.0
-PYTHON_VERSION="$(python -c 'import sys; print(f"{sys.version_info.major}.{sys.version_info.minor}")')"
-pip3 install -r requirements.txt --constraint "https://raw.githubusercontent.com/apache/airflow/constraints-3.0.0/constraints-3.10.txt"
+Install airflow:
 ```
+uv venv
+source .venv/bin/activate
+bash airflow_install.sh
+```
+
+Start up airflow service:
+`airflow standalone`
 
 Start-up the service:
 `airflow standalone > airflow_service.log 2>&1`
