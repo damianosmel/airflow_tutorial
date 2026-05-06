@@ -22,3 +22,6 @@ Airflow home directory:
 
 The Newcomer's Guide to Ariflow's Architecture:
 https://www.youtube.com/watch?v=oLTMN-4Rvj8
+
+Tutorials
+ - Airflow [101](https://airflow.apache.org/docs/apache-airflow/stable/tutorial/fundamentals.html)
