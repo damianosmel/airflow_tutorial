@@ -20,7 +20,7 @@ Check password for user:
 Airflow home directory:
 `AIRFLOW_HOME=/home/damian/airflow`
 
-The Newcomer's Guide to Ariflow's Architecture:
+The Newcomer's Guide to Airflow's Architecture:
 https://www.youtube.com/watch?v=oLTMN-4Rvj8
 
 Tutorials
