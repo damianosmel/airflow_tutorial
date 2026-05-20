@@ -12,9 +12,11 @@ with DAG(
 
     def taskflow_fastapi():
         @task()
-        def extract():
-            ctx = get_current_context()
-            input_data = ctx["params"]["data"]
+        def extract(**kwargs):
+            params = kwargs["params"]
+            input_data = {}
+            if "data" in params:
+                input_data = params["data"]
             print(f'input data: {input_data}')
             return input_data
         
