@@ -20,6 +20,9 @@ Check password for user:
 Airflow home directory:
 `AIRFLOW_HOME=/home/damian/airflow`
 
+Set up the db:
+https://airflow.apache.org/docs/apache-airflow/stable/installation/setting-up-the-database.html
+
 The Newcomer's Guide to Airflow's Architecture:
 https://www.youtube.com/watch?v=oLTMN-4Rvj8
 

@@ -16,6 +16,7 @@ def taskflow_fastapi():
     def extract(**context):
         # read conf passed when triggering the DAG (via REST API)
         dag_run = context.get("dag_run")
+        print(f'dag_run is {dag_run}')
         if dag_run and getattr(dag_run,"conf",None):
             order_data_dict = dag_run.conf
         else:
